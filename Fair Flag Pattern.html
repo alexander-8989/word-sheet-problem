@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern 13</title>
+</head>
+
+<body>
+    <Script>
+        let space = 0;
+        let n = 10;
+        let string = "";
+
+        for (let i = n; i > 0; i--) {
+            for (let j = 0; j < i; j++) {
+                string += "*";
+            }
+            for (let j = 0; j < space; j++) {
+                string += " ";
+            }
+            for (let j = 0; j < i; j++) {
+                string += "*";
+            }
+            space += 2;
+            string += "\n";
+        }
+        console.log(string);
+
+
+    </Script>
+</body>
+
+</html>
